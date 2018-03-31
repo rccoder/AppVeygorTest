@@ -1,0 +1,10 @@
+clone_depth: 1
+environment:
+  access_token:
+    secure: RkBZlGpGiMqD57DR66mj2fEsBjDEhaNXW9kDYy/I0r+VQEFRDtiBIRsJ2USc0MGh
+install:
+  - node --version
+  - npm --version
+  - npm install
+build_script:
+  - npm run publish
