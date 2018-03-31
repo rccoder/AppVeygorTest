@@ -39,7 +39,8 @@
     "gitbook-plugin-edit-link": "^2.0.2",
     "gitbook-plugin-ga": "^1.0.0",
     "gitbook-plugin-prism": "^2.3.0",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "svgexport": "^0.2.8"
   },
   "dependencies": {
     "opencollective": "^1.0.3"
