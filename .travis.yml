@@ -23,6 +23,7 @@ script:
 - npm run build
 - cp CNAME _book
 - cd _book
+- npm run offline
 - git init
 - git commit --allow-empty -m 'update book'
 - git checkout -b gh-pages && touch .nojekyll
