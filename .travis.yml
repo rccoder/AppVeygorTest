@@ -19,6 +19,14 @@ before_install:
 install:
 - npm i
 script:
-- npm run autoPub
+- npm run clean
+- npm run build
+- cp CNAME _book
+- cd _book
+- git init
+- git commit --allow-empty -m 'update book'
+- git checkout -b gh-pages && touch .nojekyll
+- git add .
+- git commit -am 'update book'
 after_success:
 - git push https://$REPO_TOKEN@github.com:rccoder/AppVeygorTest gh-pages --force
